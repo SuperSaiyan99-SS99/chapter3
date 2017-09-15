@@ -1,10 +1,19 @@
 package exercises;
 
-public class NumbersDemo {
+import java.util.Scanner;
+
+public class NumberDemo2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num1 = 4, num2 = 7;
+		int num1, num2;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter the first int >> ");
+		num1 = input.nextInt();
+		System.out.print("Enter the second int >> ");
+		num2 = input.nextInt();
 		
 		displayTwiceTheNumber(num1, num2);
 		displayNumberPlusFive(num1, num2);
@@ -37,4 +46,5 @@ public class NumbersDemo {
 		
 		System.out.println("The number squared: " + firstNumber + ", " + secondNumber);
 	}
+
 }
